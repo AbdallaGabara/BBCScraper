@@ -26,7 +26,7 @@ if __name__ == '__main__':
     # Get keyword from our user
     keyword = input("Enter your keyword of interest: ")
 
-    # Query the database for the keyword yof interest by checking if the keyword in the article, its title, and its tags
+    # Query the database for the keyword of interest by checking (for each article) if the keyword is in the article, its title, or its tags
     query = {
     "$or":
     [{"article_text": {
